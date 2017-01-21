@@ -4,7 +4,7 @@ package by.ibank.db.entity;
  * Created by Olga on 18.01.2017.
  */
 public class Review implements Entity {
-    private int id;
+    private long id;
     private int userID;
     private int departmentID;
 

@@ -12,7 +12,7 @@ public class User implements Entity {
     private String name;
     private String login;
     private String pass;
-    private Set<Role> roles = new HashSet<>();
+//    private Set<Role> roles = new HashSet<>();
 
     public User (long id, String name, String login, String pass) {
         this.id = id;
@@ -49,18 +49,26 @@ public class User implements Entity {
         this.pass = pass;
     }
 
-    public Set<Role> getRoles() {
-        return roles;
-    }
-
-    public void setRoles(Set<Role> roles) {
-        this.roles = roles;
-    }
+//    public Set<Role> getRoles() {
+//        return roles;
+//    }
+//
+//    public void setRoles(Set<Role> roles) {
+//        this.roles = roles;
+//    }
 
     @Override
     public long getId() {
         return id;
     }
 
-
+    @Override
+    public String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", login='" + login + '\'' +
+                ", pass='" + pass + '\'' +
+                '}';
+    }
 }

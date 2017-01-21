@@ -8,7 +8,7 @@ import java.util.Formatter;
 
 public final class DbConnection {
 
-    private static final String URL_PREFIX = "jdbc:mysql://localhost:3306/%s?autoReconnect=true&useSSL=false";
+    private static final String URL_PREFIX = "jdbc:mysql://localhost:3306/%s?autoReconnect=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC";
     private static final String DEFAULT_DB_NAME = "bank";
     private static String DB_NAME = DEFAULT_DB_NAME;
     private static final String USERNAME = "root";
